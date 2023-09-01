@@ -12,9 +12,6 @@ my_canvas.pack()
 
 label_var = StringVar()
 
-#my_label = Label(root, textvariable=label_var, font=("Arial", 25))
-#my_label.pack()
-
 safe_img = ImageTk.PhotoImage(file="Basic_green_dot.png")
 rad_img = ImageTk.PhotoImage(file="radiation_symbol.jpg")
 
