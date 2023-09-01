@@ -42,11 +42,11 @@ def update():
 
     elif v_diode > 3:
         print("Value: {} - Danger!".format(v_diode))
-        # play() # Sound Effect
+        play() # Sound Effect
         my_canvas.create_image(350, 350, image=rad_img, anchor="center")
         # label_var.set(label_text)  # Updating the label
 
-    root.after(100, update)  # Update command and rate, currently 10 updates per second or updating ever 0.1 second
+    root.after(200, update)
 
 
 update()

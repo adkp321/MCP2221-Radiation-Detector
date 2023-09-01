@@ -2,7 +2,6 @@
 # Adam Peterson
 #
 import hid
-import serial.tools.list_ports as lp
 import os
 import board
 import analogio
@@ -10,7 +9,7 @@ import time
 
 
 def loop():
-    diode = analogio.AnalogIn(board.G0)
+    diode = analogio.AnalogIn(board.G3)
 
     while True:
         raw = diode.value
@@ -61,7 +60,6 @@ def get_voltage(raw):
 
 def connection_status():
 
-    print(lp.comports())
     print(hid.enumerate())
     print('device' in dir(hid))
     device = hid.device()
